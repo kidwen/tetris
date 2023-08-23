@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <style>
+        body {
+            --black: #000;
+            background-color: var(--black);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h2 {
+            color: #aaa;
+        }
+        canvas {
+            border: 1px dashed #666;
+            border-top: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Press any key to start.</h2>
+    <div id="cLog" style="color: red;"></div>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <script src="./index.js"></script>
+</body>
+
+</html>
